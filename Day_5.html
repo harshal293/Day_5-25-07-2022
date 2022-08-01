@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type conversion</title>
+</head>
+<body>
+    <h1>Type conversion</h1>
+
+    <p id="demo" style="font-family:courier"></p>
+    <p id="jhala" style="font-family:courier"></p>
+
+
+    <script>
+        let a = "6";
+        let b = + a;
+        let c = demo;
+        let d = 500;
+        let e = 60;
+        document.getElementById("demo").innerHTML= typeof a + "<br>" + typeof b + "<br>" + typeof c;
+        document.getElementById("jhala").innerHTML= 
+         String(d) + "<br>" +
+         String(500) + "<br>" +
+         String(250+250) + "<br>" +
+         String(60 + null) + "<br>" +
+         String("60" + null) + "<br>" +
+         String(500 - 60) + "<br>" +
+         String(500 * 60) + "<br>" +
+         String(500 / 60) + "<br>" +
+         String(500 % 60);
+    </script>
+</body>
+</html>
